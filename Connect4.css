@@ -1,0 +1,48 @@
+body {
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    font-size: x-large;
+    text-align: center;
+    color: navy;
+}
+
+#board {
+    height: 540px;
+    width: 630px;
+    background-color: lightblue;
+    border: 20px solid navy;
+    border-radius: 40px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    border: 4.5px solid navy;
+}
+
+.tile.drop{
+    animation: dropAnimation 0.6s ease forwards;
+}
+
+.red-piece {
+    background-color: red;
+}
+
+.yellow-piece {
+    background-color:yellow;
+}
+
+@keyframes dropAnimation {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 0;
+    }
+}
